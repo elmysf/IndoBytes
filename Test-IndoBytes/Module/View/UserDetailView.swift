@@ -8,13 +8,22 @@
 import SwiftUI
 import Component
 
+/// `UserDetailView` is a SwiftUI view that displays detailed information about a user.
+/// This view shows the user's profile picture, name, and other details such as username, email, address, phone number, and website.
 struct UserDetailView: View {
+    // MARK: - Environment Properties
+    /// The environment property used to manage the presentation mode, allowing the view to be dismissed.
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
+    
+    // MARK: - Properties
+    /// The user model containing the detailed information to be displayed in the view.
     var user: ListUserModel
     
+    // MARK: - Body
     var body: some View {
         VStack(spacing: 0) {
-            VStack() {
+            VStack {
+                // Custom header with a title and a close button.
                 CustomHeaderNavigation(
                     left: {},
                     center: {
@@ -24,6 +33,7 @@ struct UserDetailView: View {
                     },
                     right: {
                         Button(action: {
+                            // Dismisses the view when the close button is pressed.
                             self.mode.wrappedValue.dismiss()
                         }, label: {
                             Image.icClosed
@@ -37,16 +47,19 @@ struct UserDetailView: View {
             .padding(.bottom, 28)
             .modifier(HeaderStyle(backgroundColor: ColorTheme.backgroundWhite.value))
             
+            // Divider separating the header from the content.
             Divider()
                 .background(Color.black)
                 .frame(height: 2)
-
+            
             ZStack {
+                // Background color of the view.
                 ColorTheme.baseBackground.value
                     .ignoresSafeArea(.all)
                 
                 VStack(spacing: 0) {
                     VStack(alignment: .center, spacing: 8) {
+                        // User profile image.
                         AsyncImage(url: user.imageDetailUser) { image in
                             image
                                 .resizable()
@@ -59,10 +72,12 @@ struct UserDetailView: View {
                         .overlay(Circle().strokeBorder(ColorTheme.textColor.value, lineWidth: 2))
                         .padding(.top, 30)
                         
+                        // User name.
                         Text(user.name)
                             .font(.WorkSans.styleFont(.semiBold, size: 32))
                             .padding(.vertical, 20)
                         
+                        // User details including username, email, address, phone, and website.
                         VStack(alignment: .leading, spacing: 10) {
                             HStack(spacing: 37) {
                                 Text("USERNAME")
@@ -122,8 +137,6 @@ struct UserDetailView: View {
                     }
                 }
             }
-            
         }
     }
 }
-
