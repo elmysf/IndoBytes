@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import Components
+import Component
 
 struct SearchView: View {
     @Binding var searchText: String

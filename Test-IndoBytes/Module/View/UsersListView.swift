@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import Components
+import Component
 
 struct UsersListView: View {
     @StateObject var userVM = UsersViewModel()

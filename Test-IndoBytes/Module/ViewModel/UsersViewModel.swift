@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import Combine
 import Network
-import Components
+import Component
 
 public class UsersViewModel: ObservableObject {
     @Published var userData: [ListUserModel] = []

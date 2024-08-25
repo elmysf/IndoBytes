@@ -14,11 +14,11 @@
 		72BA13082C7ACECF002A02BD /* Test_IndoBytesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BA13072C7ACECF002A02BD /* Test_IndoBytesTests.swift */; };
 		72BA13122C7ACECF002A02BD /* Test_IndoBytesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BA13112C7ACECF002A02BD /* Test_IndoBytesUITests.swift */; };
 		72BA13142C7ACECF002A02BD /* Test_IndoBytesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BA13132C7ACECF002A02BD /* Test_IndoBytesUITestsLaunchTests.swift */; };
-		72BA13232C7AD486002A02BD /* Components in Frameworks */ = {isa = PBXBuildFile; productRef = 72BA13222C7AD486002A02BD /* Components */; };
 		72BA13292C7AD4F5002A02BD /* ListUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BA13282C7AD4F5002A02BD /* ListUserModel.swift */; };
 		72BA132B2C7AD514002A02BD /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BA132A2C7AD514002A02BD /* UsersViewModel.swift */; };
 		72BA132D2C7AD5DB002A02BD /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BA132C2C7AD5DB002A02BD /* UserDetailView.swift */; };
 		72BA132F2C7AD603002A02BD /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BA132E2C7AD603002A02BD /* SearchView.swift */; };
+		72BA13362C7AD94A002A02BD /* Component in Frameworks */ = {isa = PBXBuildFile; productRef = 72BA13352C7AD94A002A02BD /* Component */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,11 +49,12 @@
 		72BA130D2C7ACECF002A02BD /* Test-IndoBytesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Test-IndoBytesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		72BA13112C7ACECF002A02BD /* Test_IndoBytesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_IndoBytesUITests.swift; sourceTree = "<group>"; };
 		72BA13132C7ACECF002A02BD /* Test_IndoBytesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_IndoBytesUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		72BA13202C7ACF07002A02BD /* Components */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Components; path = ../Components; sourceTree = "<group>"; };
 		72BA13282C7AD4F5002A02BD /* ListUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUserModel.swift; sourceTree = "<group>"; };
 		72BA132A2C7AD514002A02BD /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
 		72BA132C2C7AD5DB002A02BD /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
 		72BA132E2C7AD603002A02BD /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		72BA13332C7AD8C2002A02BD /* Component */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Component; sourceTree = "<group>"; };
+		72BA13342C7AD944002A02BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72BA13232C7AD486002A02BD /* Components in Frameworks */,
+				72BA13362C7AD94A002A02BD /* Component in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +86,7 @@
 		72BA12EA2C7ACECD002A02BD = {
 			isa = PBXGroup;
 			children = (
-				72BA13202C7ACF07002A02BD /* Components */,
+				72BA13332C7AD8C2002A02BD /* Component */,
 				72BA12F52C7ACECD002A02BD /* Test-IndoBytes */,
 				72BA13062C7ACECF002A02BD /* Test-IndoBytesTests */,
 				72BA13102C7ACECF002A02BD /* Test-IndoBytesUITests */,
@@ -107,6 +108,7 @@
 		72BA12F52C7ACECD002A02BD /* Test-IndoBytes */ = {
 			isa = PBXGroup;
 			children = (
+				72BA13342C7AD944002A02BD /* Info.plist */,
 				72BA13242C7AD4C5002A02BD /* Module */,
 				72BA12F62C7ACECD002A02BD /* Test_IndoBytesApp.swift */,
 				72BA12FA2C7ACECF002A02BD /* Assets.xcassets */,
@@ -200,7 +202,7 @@
 			);
 			name = "Test-IndoBytes";
 			packageProductDependencies = (
-				72BA13222C7AD486002A02BD /* Components */,
+				72BA13352C7AD94A002A02BD /* Component */,
 			);
 			productName = "Test-IndoBytes";
 			productReference = 72BA12F32C7ACECD002A02BD /* Test-IndoBytes.app */;
@@ -488,6 +490,7 @@
 				DEVELOPMENT_TEAM = 9T6A37YY89;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Test-IndoBytes/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -517,6 +520,7 @@
 				DEVELOPMENT_TEAM = 9T6A37YY89;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Test-IndoBytes/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -653,9 +657,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		72BA13222C7AD486002A02BD /* Components */ = {
+		72BA13352C7AD94A002A02BD /* Component */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = Components;
+			productName = Component;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

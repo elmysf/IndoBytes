@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import Components
+import Component
 
 struct UserDetailView: View {
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
