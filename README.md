@@ -27,3 +27,7 @@ This project is a SwiftUI-based application for managing user profiles. It featu
    ```
    Import Component
    ```
+3. Video Recordinf:
+   On This Project i have been add Video Recording
+```
+https://github.com/elmysf/Test-IndoBytes/blob/main/Video-Documenation/Record-device.mov
