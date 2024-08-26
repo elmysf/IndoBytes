@@ -69,6 +69,7 @@ struct UserDetailView: View {
                         }
                         .frame(width: 250, height: 250)
                         .clipShape(Circle())
+                        .shadow(color: ColorTheme.overlayColor.value, radius: 0, x: 5, y: 10)
                         .overlay(Circle().strokeBorder(ColorTheme.textColor.value, lineWidth: 2))
                         .padding(.top, 30)
                         

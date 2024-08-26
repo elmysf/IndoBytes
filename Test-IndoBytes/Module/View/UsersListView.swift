@@ -76,6 +76,7 @@ struct UsersListView: View {
                                             }
                                             .frame(width: 40, height: 40)
                                             .clipShape(Circle())
+                                            .shadow(color: ColorTheme.overlayColor.value, radius: 0, x: 2, y: 3)
                                             .overlay(Circle().strokeBorder(ColorTheme.textColor.value, lineWidth: 1))
                                             
                                             // User's name and username

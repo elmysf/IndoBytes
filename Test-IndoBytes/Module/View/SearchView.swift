@@ -51,6 +51,7 @@ struct SearchView: View {
         }
         .padding(.top, 16)
         .frame(maxWidth: .infinity)
+        .shadow(color: ColorTheme.overlayColor.value, radius: 0, x: 3, y: 4)
         .onTapGesture {
             self.didTapSearchTextField()
         }
